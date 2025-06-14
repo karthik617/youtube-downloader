@@ -1,0 +1,422 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+/* Enhanced button styles for the downloader */
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  color: rgba(255, 255, 255, 0.87);
+  cursor: pointer;
+  transition: all 0.25s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+}
+
+button:hover:not(:disabled) {
+  border-color: #646cff;
+  background-color: #2a2a2a;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Red button variants for download actions */
+button.btn-red {
+  background-color: #dc2626;
+  color: white;
+  border-color: #dc2626;
+}
+
+button.btn-red:hover:not(:disabled) {
+  background-color: #b91c1c;
+  border-color: #b91c1c;
+}
+
+button.btn-red-outline {
+  background-color: transparent;
+  color: #dc2626;
+  border-color: #dc2626;
+}
+
+button.btn-red-outline:hover:not(:disabled) {
+  background-color: #dc2626;
+  color: white;
+}
+
+button.btn-red-outline.active {
+  background-color: #dc2626;
+  color: white;
+}
+
+/* Form elements */
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 1em;
+  padding: 0.6em 1em;
+  border-radius: 8px;
+  border: 1px solid #374151;
+  background-color: #1a1a1a;
+  color: rgba(255, 255, 255, 0.87);
+  transition: border-color 0.25s;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid #646cff;
+  outline-offset: 2px;
+  border-color: #646cff;
+}
+
+input:disabled,
+select:disabled,
+textarea:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Placeholder styling */
+input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+label {
+  font-weight: 500;
+  font-size: 0.95em;
+  margin-bottom: 0.3em;
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+/* Card/container styling */
+.card {
+  background-color: #1a1a1a;
+  border: 1px solid #374151;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* Alert/message styling */
+.alert {
+  padding: 0.75rem;
+  border-radius: 8px;
+  margin: 0.5rem 0;
+  border: 1px solid;
+}
+
+.alert-info {
+  background-color: rgba(59, 130, 246, 0.1);
+  border-color: rgba(59, 130, 246, 0.3);
+  color: #60a5fa;
+}
+
+.alert-error {
+  background-color: rgba(239, 68, 68, 0.1);
+  border-color: rgba(239, 68, 68, 0.3);
+  color: #f87171;
+}
+
+.alert-success {
+  background-color: rgba(34, 197, 94, 0.1);
+  border-color: rgba(34, 197, 94, 0.3);
+  color: #4ade80;
+}
+
+/* Instructions/info box */
+.info-box {
+  background-color: #111827;
+  border: 1px solid #374151;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.info-box h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+/* Lists */
+ul {
+  padding-left: 1.25em;
+  margin: 0.5em 0;
+  list-style: disc;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+li {
+  margin-bottom: 0.4em;
+  line-height: 1.4;
+  text-align: left;
+}
+
+/* Utility classes */
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.gap-3 {
+  gap: 0.75rem;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
+/* Animations */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+/* Light mode adjustments */
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  a:hover {
+    color: #747bff;
+  }
+
+  button {
+    background-color: #f9f9f9;
+    color: #213547;
+    border-color: #d1d5db;
+  }
+
+  button:hover:not(:disabled) {
+    background-color: #e5e7eb;
+    border-color: #9ca3af;
+  }
+
+  button.btn-red {
+    background-color: #dc2626;
+    color: white;
+  }
+
+  button.btn-red:hover:not(:disabled) {
+    background-color: #b91c1c;
+  }
+
+  input,
+  select,
+  textarea {
+    background-color: #ffffff;
+    color: #213547;
+    border-color: #d1d5db;
+  }
+
+  input::placeholder {
+    color: #9ca3af;
+  }
+
+  label {
+    color: #213547;
+  }
+
+  ul,
+  li {
+    color: #213547;
+  }
+
+  .card {
+    background-color: #ffffff;
+    border-color: #e5e7eb;
+    box-shadow:
+      0 4px 6px -1px rgba(0, 0, 0, 0.1),
+      0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+
+  .info-box {
+    background-color: #f9fafb;
+    border-color: #e5e7eb;
+  }
+
+  .info-box h3 {
+    color: #213547;
+  }
+
+  .alert-info {
+    background-color: rgba(59, 130, 246, 0.1);
+    color: #2563eb;
+  }
+
+  .alert-error {
+    background-color: rgba(239, 68, 68, 0.1);
+    color: #dc2626;
+  }
+
+  .alert-success {
+    background-color: rgba(34, 197, 94, 0.1);
+    color: #16a34a;
+  }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  body {
+    padding: 1rem;
+  }
+
+  .card {
+    padding: 1rem;
+  }
+
+  button {
+    padding: 0.75em 1em;
+  }
+}
+
+/* Container for the YouTube Downloader */
+.downloader-container {
+  max-width: 42rem;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Form sections spacing */
+.form-section {
+  margin-bottom: 1rem;
+}
+
+.form-section:last-child {
+  margin-bottom: 0;
+}
+
+/* Button group styling */
+.button-group {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 480px) {
+  .button-group {
+    flex-direction: column;
+  }
+
+  .button-group button {
+    width: 100%;
+  }
+}

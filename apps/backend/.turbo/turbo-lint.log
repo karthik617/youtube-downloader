@@ -1,0 +1,21 @@
+
+> backend@1.0.0 lint
+> eslint . --ext .js,.ts
+
+[1G[0K[0m[0m
+[0m[4m/Users/abcom/Desktop/karthik/youtube-downloader/apps/backend/routes/youtube-downloader.js[24m[0m
+[0m  [2m19:11[22m  [33mwarning[39m  'audioFormat' is assigned a value but never used  [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m[0m
+[0m[4m/Users/abcom/Desktop/karthik/youtube-downloader/apps/backend/test-ffmpeg.js[24m[0m
+[0m  [2m15:9[22m  [33mwarning[39m  'resolutions' is assigned a value but never used  [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m  [2m35:7[22m  [33mwarning[39m  'downloaded' is assigned a value but never used   [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m[0m
+[0m[4m/Users/abcom/Desktop/karthik/youtube-downloader/apps/backend/test.js[24m[0m
+[0m  [2m2:7[22m  [33mwarning[39m  'fs' is assigned a value but never used         [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m  [2m3:7[22m  [33mwarning[39m  'path' is assigned a value but never used       [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m  [2m4:7[22m  [33mwarning[39m  'sanitize' is assigned a value but never used   [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m  [2m7:7[22m  [33mwarning[39m  'VIDEO_URL' is assigned a value but never used  [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m[0m
+[0m[33m[1m✖ 7 problems (0 errors, 7 warnings)[22m[39m[0m
+[0m[33m[1m[22m[39m[0m
+[1G[0K⠙[1G[0K
