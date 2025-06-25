@@ -5,10 +5,10 @@ const cors = require('cors');
 const PORT = 3001;
 const router = require('./routes');
 
-app.use(cors({ origin: '*', methods: ['GET', 'POST'] }));
+app.use(cors({ origin: '*', methods: ['GET', 'POST', 'DELETE'] }));
 app.use((req, res, next) => {
   res.setHeader('Access-Control-Allow-Origin', '*');
-  res.setHeader('Access-Control-Expose-Headers', 'Content-Disposition');
+  res.setHeader('Access-Control-Expose-Headers', 'Content-Disposition, X-Download-Id');
   next();
 });
 

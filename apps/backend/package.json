@@ -9,7 +9,9 @@
     "@distube/ytdl-core": "^4.16.12",
     "axios": "^1.9.0",
     "cors": "^2.8.5",
+    "crypto": "^1.0.1",
     "progress": "^2.0.3",
-    "sanitize-filename": "^1.6.3"
+    "sanitize-filename": "^1.6.3",
+    "sharp": "^0.34.2"
   }
 }
